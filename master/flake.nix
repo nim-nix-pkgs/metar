@@ -1,5 +1,5 @@
 {
-  description = ''Read metadata from jpeg and tiff images.'';
+  description = ''Metadata Reader for Images'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -12,6 +12,14 @@
   inputs.src-metar-master.owner = "flenniken";
   inputs.src-metar-master.repo  = "metar";
   inputs.src-metar-master.type  = "github";
+  
+  inputs."nimpy".owner = "nim-nix-pkgs";
+  inputs."nimpy".ref   = "master";
+  inputs."nimpy".repo  = "nimpy";
+  inputs."nimpy".dir   = "";
+  inputs."nimpy".type  = "github";
+  inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
