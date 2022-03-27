@@ -11,6 +11,7 @@
   inputs.src-metar-master.ref   = "refs/heads/master";
   inputs.src-metar-master.owner = "flenniken";
   inputs.src-metar-master.repo  = "metar";
+  inputs.src-metar-master.dir   = "";
   inputs.src-metar-master.type  = "github";
   
   inputs."nimpy".owner = "nim-nix-pkgs";
