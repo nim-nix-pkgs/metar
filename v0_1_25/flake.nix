@@ -11,7 +11,6 @@
   inputs.src-metar-v0_1_25.ref   = "refs/tags/v0.1.25";
   inputs.src-metar-v0_1_25.owner = "flenniken";
   inputs.src-metar-v0_1_25.repo  = "metar";
-  inputs.src-metar-v0_1_25.dir   = "";
   inputs.src-metar-v0_1_25.type  = "github";
   
   inputs."nimpy".owner = "nim-nix-pkgs";
