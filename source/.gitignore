@@ -1,0 +1,11 @@
+nimcache/
+*.swp
+*~
+bin/
+metar/private/
+*.pyc
+*.nims
+metarenv/
+testfiles.extra/
+*.DS_Store
+metarpy/
